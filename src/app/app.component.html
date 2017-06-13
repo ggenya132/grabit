@@ -1,3 +1,126 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container-fluid">
+  <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+          <div class="header">
+              <img class="logo" src="https://www.jpmorganchase.com/corporate/includes/images/chase-logo.png" alt="chase logo">
+             <h1>GRAB IT</h1>
+          </div>
+         
+  </div>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+
+       <div class="form-group">
+  <label for="site">Site</label>
+        <select
+           name="site"
+           id="site"
+           ngModel
+           class="form-control"
+           required
+           #site="ngModel"
+          >
+          <option value="DTC">JPMorgan Chase Delaware Technology Center</option>
+          
+          </select>
+</div>
+ <span class="help-block" 
+        *ngIf="!site.valid && site.touched">Please select a valid site</span>
+  </div>
+    </div>
+
+
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+
+       <div class="form-group">
+  <label for="building">Building</label>
+        <select
+           name="building"
+           id="building"
+           ngModel
+           class="form-control"
+           required
+          >
+          <option value="DTC">JPMorgan Chase Delaware Technology Center 1</option>
+          <option value="DTC">JPMorgan Chase Delaware Technology Center 2</option>
+
+          </select>
+</div>
+    </div>
+  </div>
+
+    <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+
+       <div class="form-group">
+  <label for="building">Floor</label>
+        <select
+           name="floor"
+           id="florr"
+           ngModel
+           class="form-control"
+           required
+          >
+          <option value="DTC">Floor 1</option>
+          <option value="DTC">Floor 2</option>
+          <option value="DTC">Floor 3</option>
+          </select>
+</div>
+
+  </div>
+    </div>
+
+
+  
+
+     <div class="row bottom-row">
+       <div class="text-center">
+         <button class="btn-lg btn-primary" (click)="onClick()">
+        SEARCH
+      </button>
+       </div>
+     </div>
+
+     <div *ngIf="fakeMethod">
+     <div class="row">
+       <div class="col-md-6 col-md-offset-3">
+          <div class="list-group-item seat">
+       SEAT: <strong> 29 </strong> ,  NEIGHBORHOOD: <strong>  Centerville</strong>
+     </div>
+       </div>
+     </div>
+
+        <div class="row">
+       <div class="col-md-6 col-md-offset-3">
+          <div class="list-group-item seat">
+       SEAT: <strong> 29 </strong> ,  NEIGHBORHOOD: <strong>  Centerville</strong>
+     </div>
+       </div>
+     </div>
+        <div class="row">
+       <div class="col-md-6 col-md-offset-3">
+          <div class="list-group-item seat">
+       SEAT: <strong> 29 </strong> ,  NEIGHBORHOOD: <strong>  Dagsboro</strong>
+     </div>
+       </div>
+     </div>
+        <div class="row">
+       <div class="col-md-6 col-md-offset-3">
+          <div class="list-group-item seat">
+       SEAT: <strong> 10 </strong> ,  NEIGHBORHOOD: <strong>  Gotham</strong>
+     </div>
+       </div>
+     </div>
+        <div class="row">
+       <div class="col-md-6 col-md-offset-3">
+          <div class="list-group-item seat">
+       SEAT: <strong> 13 </strong> ,  NEIGHBORHOOD: <strong>  Centerville</strong>
+     </div>
+       </div>
+     </div>
+     </div>
+
+    
+
+</div>

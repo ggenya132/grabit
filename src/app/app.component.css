@@ -1,0 +1,47 @@
+.container-fluid {
+    padding-top: 20px;
+    background-color: #efefef;
+    height: 100vw;
+}
+
+.header {
+
+    text-align: center;
+    
+    color: black;
+}
+.logo {
+   
+   width: 100%;
+}
+ h1 {
+font-size: 75px;
+font-weight: 300;
+}
+
+.bottom-row {
+    
+    padding-bottom: 20px;
+}
+
+.list-group-item {
+    margin: 10px 0;
+}
+
+.seat {
+
+    border: 2px solid lightgray;
+     transition: border .2s;
+}
+
+.seat:hover {
+
+
+    border: 2px solid lightblue;
+   
+}
+
+.help-block {
+
+color: red;
+}
